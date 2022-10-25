@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -16,7 +17,10 @@ function PortfolioContainer() {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    return <Contact />;
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+    return <Resume />;
   };
 
   const handlePageChange = (page) => serCurrentPage(page);

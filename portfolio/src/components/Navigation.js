@@ -2,44 +2,41 @@ import React from "react";
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <ul className="flex flex-wrap list-none pl-0 mb-0 border border-t-0 border-r-0 border-l-0 border-b-1 border-gray-200">
-      <li className="">
+    <ul className="flex p-3">
+      <li className="inline-block py-2 px-4">
         <a
           href="#about"
           onClick={() => handlePageChange("About")}
-          className={
-            currentPage === "About"
-              ? "inline-block py-2 px-4 no-underline active"
-              : "inline-block py-2 px-4 no-underline"
-          }
+          className={"" + currentPage === "About" ? "active" : "inactive"}
         >
-          About Me
+          About
         </a>
       </li>
-      <li className="">
+      <li className="inline-block py-2 px-4">
         <a
           href="#Portfolio"
           onClick={() => handlePageChange("Portfolio")}
-          className={
-            currentPage === "Portfolio"
-              ? "inline-block py-2 px-4 no-underline active"
-              : "inline-block py-2 px-4 no-underline"
-          }
+          className={currentPage === "Portfolio" ? "active" : "inactive"}
         >
           Portfolio
         </a>
       </li>
-      <li className="">
+      <li className="inline-block py-2 px-4">
         <a
           href="#Contact"
           onClick={() => handlePageChange("Contact")}
-          className={
-            currentPage === "Contact"
-              ? "inline-block py-2 px-4 no-underline active"
-              : "inline-block py-2 px-4 no-underline"
-          }
+          className={currentPage === "Contact" ? "active" : "inactive"}
         >
-          Contact Info
+          Contact
+        </a>
+      </li>
+      <li className="inline-block py-2 px-4">
+        <a
+          href="#Resume"
+          onClick={() => handlePageChange("Resume")}
+          className={currentPage === "Resume" ? "active" : "inactive"}
+        >
+          Resume
         </a>
       </li>
     </ul>
