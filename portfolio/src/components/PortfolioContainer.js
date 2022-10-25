@@ -7,7 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 function PortfolioContainer() {
-  const [currentPage, serCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
     if (currentPage === "About") {
@@ -22,12 +22,12 @@ function PortfolioContainer() {
     return <Resume />;
   };
 
-  const handlePageChange = (page) => serCurrentPage(page);
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen ml-72 mr-72">
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <div className="mx-auto my-auto">{renderPage()}</div>
       <Footer />
     </div>
   );
