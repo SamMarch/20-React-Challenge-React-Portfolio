@@ -46,14 +46,15 @@ function Contact() {
   };
 
   return (
-    <div>
-      <form className="form">
+    <div className="bg-teal-400 p-10">
+      <form>
         <input
           value={name}
           name="name"
           onChange={handleInputChange}
           type="name"
           placeholder="name"
+          className="bg-teal-200"
         />
         <input
           value={email}
