@@ -1,11 +1,11 @@
 import React from "react";
 
-function Project() {
+function Portfolio() {
   return (
     <div className="bg-cyan-500 p-10">
-      <h1>Project</h1>
+      <h1>Portfolio</h1>
     </div>
   );
 }
 
-export default Project;
+export default Portfolio;

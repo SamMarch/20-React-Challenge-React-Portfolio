@@ -18,15 +18,15 @@ function Navigation({ currentPage, handlePageChange }) {
       </li>
       <li className="">
         <a
-          href="#Project"
-          onClick={() => handlePageChange("Project")}
+          href="#Portfolio"
+          onClick={() => handlePageChange("Portfolio")}
           className={
-            currentPage === "Project"
+            currentPage === "Portfolio"
               ? "inline-block py-2 px-4 no-underline active"
               : "inline-block py-2 px-4 no-underline"
           }
         >
-          Projects
+          Portfolio
         </a>
       </li>
       <li className="">
