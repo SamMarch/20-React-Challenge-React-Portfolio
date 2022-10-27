@@ -5,40 +5,40 @@ function Navigation({ currentPage, handlePageChange }) {
     <nav className="flex">
       <ul className="p-3 ml-auto">
         <li className="inline-block py-2 px-4">
-          <a
+          <button
             href="#about"
             onClick={() => handlePageChange("About")}
             className={"" + currentPage === "About" ? "active" : "inactive"}
           >
             About
-          </a>
+          </button>
         </li>
         <li className="inline-block py-2 px-4">
-          <a
+          <button
             href="#Portfolio"
             onClick={() => handlePageChange("Portfolio")}
             className={currentPage === "Portfolio" ? "active" : "inactive"}
           >
             Portfolio
-          </a>
+          </button>
         </li>
         <li className="inline-block py-2 px-4">
-          <a
+          <button
             href="#Contact"
             onClick={() => handlePageChange("Contact")}
             className={currentPage === "Contact" ? "active" : "inactive"}
           >
             Contact
-          </a>
+          </button>
         </li>
         <li className="inline-block py-2 px-4">
-          <a
+          <button
             href="#Resume"
             onClick={() => handlePageChange("Resume")}
             className={currentPage === "Resume" ? "active" : "inactive"}
           >
             Resume
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
