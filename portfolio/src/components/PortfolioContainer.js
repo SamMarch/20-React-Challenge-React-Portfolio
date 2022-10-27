@@ -25,7 +25,7 @@ function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="flex flex-col min-h-screen ml-72 mr-72">
+    <div className="flex flex-col min-h-screen bg-gray-900">
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <div className="mx-auto my-auto">{renderPage()}</div>
       <Footer />

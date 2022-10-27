@@ -8,7 +8,7 @@ function Portfolio() {
       return <Project key={project.id} {...project} />;
     });
   };
-  return <div>{renderProjects()}</div>;
+  return <div className="grid grid-cols-3 gap-5">{renderProjects()}</div>;
 }
 
 export default Portfolio;

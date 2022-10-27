@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-blue-500 p-10 max-w-lg">
-      <h1 className="text-3xl text-center pb-5">About Me</h1>
-      <p>
+    <div className="p-10 max-w-lg">
+      <h1 className="text-3xl text-center pb-5 text-gray-300">About Me</h1>
+      <p className="text-gray-400 text-center">
         Full-stack web developer with much experience in management of time,
         staff, and budgets coming from a strong background in hospitality.
         Having spent 15 years in all areas of the industry and earning all
@@ -14,7 +14,7 @@ function About() {
         house. I am also currently completing a qualification in Training and
         Assessment which would allow me to teach any subject I am qualified in,
         including all the areas mentioned, along with any new skills I become
-        certified in.
+        certified.
       </p>
     </div>
   );

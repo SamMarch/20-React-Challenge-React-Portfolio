@@ -8,7 +8,9 @@ function Navigation({ currentPage, handlePageChange }) {
           <button
             href="#about"
             onClick={() => handlePageChange("About")}
-            className={"" + currentPage === "About" ? "active" : "inactive"}
+            className={
+              "" + currentPage === "About" ? "text-gray-100 active" : "inactive"
+            }
           >
             About
           </button>
@@ -17,7 +19,9 @@ function Navigation({ currentPage, handlePageChange }) {
           <button
             href="#Portfolio"
             onClick={() => handlePageChange("Portfolio")}
-            className={currentPage === "Portfolio" ? "active" : "inactive"}
+            className={
+              currentPage === "Portfolio" ? "text-gray-100 active" : "inactive"
+            }
           >
             Portfolio
           </button>
@@ -26,7 +30,9 @@ function Navigation({ currentPage, handlePageChange }) {
           <button
             href="#Contact"
             onClick={() => handlePageChange("Contact")}
-            className={currentPage === "Contact" ? "active" : "inactive"}
+            className={
+              currentPage === "Contact" ? "text-gray-100 active" : "inactive"
+            }
           >
             Contact
           </button>
@@ -35,7 +41,9 @@ function Navigation({ currentPage, handlePageChange }) {
           <button
             href="#Resume"
             onClick={() => handlePageChange("Resume")}
-            className={currentPage === "Resume" ? "active" : "inactive"}
+            className={
+              currentPage === "Resume" ? "text-gray-100 active" : "inactive"
+            }
           >
             Resume
           </button>
