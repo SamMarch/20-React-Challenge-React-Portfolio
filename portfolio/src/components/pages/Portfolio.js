@@ -1,20 +1,14 @@
 import React from "react";
-import Project from "../Project";
+import Project from "./cards/Project";
+import projects from "../../data/projectData";
 
 function Portfolio() {
-  return (
-    <div className="bg-cyan-500 p-10">
-      <h1>Portfolio</h1>
-      <div className="grid grid-cols-3">
-        <Project title="Project 1" path="#" github="#" />
-        <Project title="Project 2" path="#" github="#" />
-        <Project title="Project 3" path="#" github="#" />
-        <Project title="Project 4" path="#" github="#" />
-        <Project title="Project 5" path="#" github="#" />
-        <Project title="Project 6" path="#" github="#" />
-      </div>
-    </div>
-  );
+  const renderProjects = () => {
+    return projects.map((project) => {
+      return <Project key={project.id} {...project} />;
+    });
+  };
+  return <div>{renderProjects()}</div>;
 }
 
 export default Portfolio;
